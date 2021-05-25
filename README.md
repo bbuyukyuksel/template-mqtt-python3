@@ -16,15 +16,50 @@ download from: https://mosquitto.org/download/
 
 
 
+## mqtt_sub.py
+
+Subscribe a topic to listen message
+
+
+
 ## mqtt_pub.py
 
 Publish a message with a topic
 
 
 
-## mqtt_sub.py
+## Windows CLI Example
 
-Subscribe a topic to listen message
+### Start Server
+
+```bash
+>> cd C:\Program Files\mosquitto
+>> mosquitto.exe -p 1883
+```
+
+ 
+
+### Subscripe
+
+```bash
+>> cd C:\Program Files\mosquitto
+>> mosquitto_sub -d -L mqtt://peresthayal:123456@127.0.0.1:1883/home/test -v
+```
+
+
+
+### Publish
+
+```bash
+>> cd C:\Program Files\mosquitto
+>> mosquitto_pub -d -L mqtt://peresthayal:123456@127.0.0.1:1883/home/test -m "TEST"
+```
+
+
+
+
+
+
 
 
 
