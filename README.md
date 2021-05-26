@@ -37,7 +37,17 @@ Publish a message with a topic
 >> mosquitto.exe -p 1883
 ```
 
- 
+
+
+ ### Check Broker
+
+You can check MQTT Server's listening port [default port:1883 ]
+
+```bash
+>> netstat -a
+```
+
+
 
 ### Subscripe
 
